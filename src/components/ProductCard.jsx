@@ -18,7 +18,7 @@ const ProductCard = ({item}) => {
                     <Typography variant='body2' >{item.title}</Typography>
                 </CardContent>
                 <CardActions style={{marginInline: "10px"}}>
-                    <Button variant='contained' color='warning' href={`product/${item.id}`}>Buy Now</Button>
+                    <Link to={`product/${item.id}`}><Button variant='contained' color='warning'>Buy Now</Button></Link>
                     <Stack direction='row'>
                         <Button size='small'>Share</Button>
                         <Button size='small'>Learn more</Button>
