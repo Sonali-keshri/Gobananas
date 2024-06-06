@@ -1,0 +1,106 @@
+.heading {
+  text-align: center;
+}
+
+.wrapper {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.navabar {
+  margin-bottom: 20px;
+}
+
+.card_content{
+  width: 50%;
+}
+
+.detail_content {
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+
+.detail_content .card {
+  border: none;
+  display: flex;
+  gap: 30px;
+  box-shadow: none;
+}
+
+.price_section {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.actual_price {
+  text-decoration: line-through;
+}
+
+.counter {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.qty_inp {
+  width: 50px;
+  padding: 14px 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.qty_btn {
+  padding: 10px 15px;
+
+}
+
+
+@media screen and (max-width: 1060px) {
+  .detail_content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .detail_content .card {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .detail_content{
+    padding: 0;
+    width: 100%;
+  }
+ 
+  .detail_content .card {
+   flex-direction: column;
+  
+  
+  }
+  .card_content{
+    width: 100%;
+  }
+
+  .cards {
+    display: block;
+    padding: 30px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
